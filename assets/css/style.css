@@ -5,19 +5,27 @@ body {
 }
 
 .jumbotron {
+    font-family: 'Courgette', cursive;
     background: rgba(200, 54, 54, 0);
-    color:#ffffff;
+    color: #ffffff;
     text-shadow: black 0.3em 0.3em 0.3em;
     padding: 0;
 }
 
+#instructions {
+    font-size: 22px;
+    font-style: italic;
+}
+
 #number-to-guess {
     font-family: 'Sarina', cursive;
-    color:#e8198f; 
+    color: #ffbb00;
     font-size: 50px;
+    font-style: normal;
 }
 
 #user-total {
+    font-family: 'Courgette', cursive;
     color: #ffffff;
     text-shadow: black 0.3em 0.3em 0.3em;
     text-align: center;
@@ -29,5 +37,5 @@ body {
     color: #e8198f;
     text-shadow: black 0.3em 0.3em 0.3em;
     text-align: center;
-    font-size: 50px;   
+    font-size: 50px;
 }

@@ -12,22 +12,22 @@ $(document).ready(function () {
   $("#chakra").on("click", function () {
     counter += chakraNumber;
     $("#user-total").html(counter);
-    counterValue ();
+    counterValue();
   });
   $("#chakraTwo").on("click", function () {
     counter += chakraNumberTwo;
     $("#user-total").html(counter);
-    counterValue ();
+    counterValue();
   });
   $("#chakraThree").on("click", function () {
     counter += chakraNumberThree;
     $("#user-total").html(counter);
-    counterValue ();
+    counterValue();
   });
   $("#chakraFour").on("click", function () {
     counter += chakraNumberFour;
     $("#user-total").html(counter);
-    counterValue ();
+    counterValue();
   });
 
   var wins = 0;
@@ -42,19 +42,22 @@ $(document).ready(function () {
     chakraNumberThree = Math.floor(Math.random() * 12) + 1;
     chakraNumberFour = Math.floor(Math.random() * 12) + 1;
     $("#score").html("<p>Wins: " + wins + "</p>" +
-      "<br><p>Losses: " + loss + "</p>")
+      "<p>Losses: " + loss + "</p>")
   }
+
+  var htmlWin = "You've aligned your chakras!";
+  var htmlLoss = "You've failed to restore balance, try again!"
 
   function counterValue() {
     console.log("Counter: " + counter);
     console.log("Target: " + targetNumber);
     if (counter === targetNumber) {
       wins++;
-      $("#user-total").html("You've aligned your chakras!");
+      $("#user-total").html(htmlWin);
       initGame();
     } else if (counter >= targetNumber) {
       loss++;
-      $("#user-total").html("You've failed to restore balance, try again!");
+      $("#user-total").html(htmlLoss);
       initGame();
     }
   }

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Sarina" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/javascript/game.js"></script>
 
@@ -16,7 +17,9 @@
 <body>
   <div class="jumbotron">
     <h1 class="text-center">Namaste!</h1>
-    <h2 class="text-center">To align your chakras, match this number:
+    <h2 id="instructions" class="text-center">Select a chakra to start your count.
+      <br>You will need to remain mindful to determine the value of each chakra.
+      <br>To align your chakras, match this number:
       <br>
       <br>
       <span id="number-to-guess"></span>
@@ -32,20 +35,22 @@
     </div>
     <div class="row">
       <div class="col-xs-3">
-          <img id="chakra" src="assets/images/chakra.jpg" alt="Solar Plexus Chakra" style="width:170px;height:190px">
+        <img id="chakra" src="assets/images/chakra.jpg" alt="Solar Plexus Chakra" style="width:170px;height:190px">
       </div>
       <div class="col-xs-3">
-          <img id="chakraTwo" src="assets/images/chakra2.jpg" alt="Heart Chakra" style="width:170px;height:190px">
+        <img id="chakraTwo" src="assets/images/chakra2.jpg" alt="Heart Chakra" style="width:170px;height:190px">
       </div>
       <div class="col-xs-3">
-          <img id="chakraThree" src="assets/images/chakra3.jpg" alt="Throat Chakra" style="width:170px;height:190px">
+        <img id="chakraThree" src="assets/images/chakra3.jpg" alt="Throat Chakra" style="width:170px;height:190px">
       </div>
       <div class="col-xs-3">
-          <img id="chakraFour" src="assets/images/chakra4.jpg" alt="Third Eye Chakra" style="width:170px;height:190px">
-    </div>
+        <img id="chakraFour" src="assets/images/chakra4.jpg" alt="Third Eye Chakra" style="width:170px;height:190px">
+      </div>
     </div>
     <div class="row">
-      <div id="score"><center></center></div>
+      <div id="score">
+        <center></center>
+      </div>
     </div>
   </div>
 
