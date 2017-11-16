@@ -6,10 +6,19 @@ body {
 
 .jumbotron {
     background: rgba(200, 54, 54, 0);
-    color: #ffffff;
+    color:#ffffff;
     text-shadow: black 0.3em 0.3em 0.3em;
+    padding: 0;
 }
 
 #number-to-guess {
+    color:#e8198f; 
+    font-size: 50px;
+}
+
+#user-total {
+    color: #ffffff;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    text-align: center;
     font-size: 50px;
 }
