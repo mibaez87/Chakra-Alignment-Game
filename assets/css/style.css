@@ -3,8 +3,13 @@ body {
     background-size: 100%, 100%;
     background-repeat: no-repeat;
 }
-    .jumbotron {
+
+.jumbotron {
     background: rgba(200, 54, 54, 0);
     color: #ffffff;
     text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+#number-to-guess {
+    font-size: 50px;
 }

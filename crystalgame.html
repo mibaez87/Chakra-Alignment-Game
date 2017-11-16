@@ -17,6 +17,7 @@
     <h1 class="text-center">Namaste!</h1>
     <h2 class="text-center">To align your chakras, match this number:
       <br>
+      <br>
       <span id="number-to-guess"></span>
     </h2>
   </div>
@@ -45,7 +46,12 @@
   </div>
 
   <script type="text/javascript">
-  var targetNumber = Math.floor(Math.random() * (19 - 121) + 19);
+  var targetNumber = Math.floor(Math.random() * (121-19+1) + 19);
+  
+  $("#number-to-guess").text(targetNumber);
+
+  var userNumber = Math.floor(Math.random() * 12) + 1;
+
   </script>
 
 </body>
