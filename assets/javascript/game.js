@@ -30,20 +30,20 @@ $(document).ready(function () {
     counterValue ();
   });
 
-  var alignments = [];
-  var failures = [];
+  var wins = 0;
+  var loss = 0;
+  alignments = [];
+  failures = [];
 
   function counterValue() {
     console.log("Counter: " + counter);
     console.log("Target: " + targetNumber);
     if (counter === targetNumber) {
-      var wins = 0;
       wins++;
       $("#user-total").html("You've aligned your chakras!");
       wins.push(alignnments);
       initGame();
     } else if (counter >= targetNumber) {
-      var loss = 0;
       loss++;
       $("#user-total").html("You've failed to restore balance, try again!");
       loss.push(failures);
