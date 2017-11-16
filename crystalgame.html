@@ -49,6 +49,7 @@
   <script type="text/javascript">
 
   $(document).ready(function() {
+    
     var targetNumber = Math.floor(Math.random() * (121-19+1) + 19);
     $("#number-to-guess").text(targetNumber);
 
@@ -78,17 +79,24 @@
     var alignments = [];
     var failures = [];
     if (counter === targetNumber) {
+      console.log("Counter: " + counter);
+      console.log("Target: " + targetNumber);
       var win = 0;
       wins++;
-      $("#user-total").append("You have aligned your chakras!");
+      $("#user-total").html("You have aligned your chakras!");
       wins.push(alignnments);
+      reset ();
     }
 
     else if (counter >= targetNumber) {
       var loss = 0;
       loss++;
-      $("#user-total").append("You've failed to restore balance, try again!");
+      $("#user-total").html("You've failed to restore balance, try again!");
       loss.push(failures);
+      reset ();
+    }
+
+    function reset () {
     }
 
   });
