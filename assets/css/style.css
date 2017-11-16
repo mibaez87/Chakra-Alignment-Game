@@ -12,6 +12,7 @@ body {
 }
 
 #number-to-guess {
+    font-family: 'Sarina', cursive;
     color:#e8198f; 
     font-size: 50px;
 }
@@ -21,4 +22,12 @@ body {
     text-shadow: black 0.3em 0.3em 0.3em;
     text-align: center;
     font-size: 50px;
+}
+
+#score {
+    font-family: 'Sarina', cursive;
+    color: #e8198f;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    text-align: center;
+    font-size: 50px;   
 }

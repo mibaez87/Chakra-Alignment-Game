@@ -32,8 +32,18 @@ $(document).ready(function () {
 
   var wins = 0;
   var loss = 0;
-  alignments = [];
-  failures = [];
+
+  function initGame() {
+    targetNumber = Math.floor(Math.random() * (121 - 19 + 1) + 19);
+    $("#number-to-guess").text(targetNumber);
+    counter = 0;
+    chakraNumber = Math.floor(Math.random() * 12) + 1;
+    chakraNumberTwo = Math.floor(Math.random() * 12) + 1;
+    chakraNumberThree = Math.floor(Math.random() * 12) + 1;
+    chakraNumberFour = Math.floor(Math.random() * 12) + 1;
+    $("#score").html("<p>Wins: " + wins + "</p>" +
+      "<br><p>Losses: " + loss + "</p>")
+  }
 
   function counterValue() {
     console.log("Counter: " + counter);
@@ -41,27 +51,12 @@ $(document).ready(function () {
     if (counter === targetNumber) {
       wins++;
       $("#user-total").html("You've aligned your chakras!");
-      wins.push(alignnments);
       initGame();
     } else if (counter >= targetNumber) {
       loss++;
       $("#user-total").html("You've failed to restore balance, try again!");
-      loss.push(failures);
       initGame();
     }
-  }
-
-  function initGame() {
-    targetNumber = Math.floor(Math.random() * (121 - 19 + 1) + 19);
-    counter = 0;
-    chakraNumber = Math.floor(Math.random() * 12) + 1;
-    chakraNumberTwo = Math.floor(Math.random() * 12) + 1;
-    chakraNumberThree = Math.floor(Math.random() * 12) + 1;
-    chakraNumberFour = Math.floor(Math.random() * 12) + 1;
-    alignments = [];
-    failures = [];
-    $("#score").html("<p>Wins: " + wins + "</p>" +
-      "<br><p>Losses: " + loss + "</p>")
   }
 
 });
