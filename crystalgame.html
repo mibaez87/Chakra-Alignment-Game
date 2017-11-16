@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>CrystalsCollector Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+
+<body>
+  <div class="jumbotron">
+    <h1 class="text-center">Namaste!</h1>
+    <h2 class="text-center">To align your chakras, match this number:
+      <br>
+      <span id="number-to-guess"></span>
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p><center>"User Number Here"</center></p>
+        <br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">
+          <img id="chakra" src="assets/images/chakra.jpg" alt="Solar Plexus Chakra" style="width:170px;height:190px">
+      </div>
+      <div class="col-xs-3">
+          <img id="chakraTwo" src="assets/images/chakra2.jpg" alt="Heart Chakra" style="width:170px;height:190px">
+      </div>
+      <div class="col-xs-3">
+          <img id="chakraThree" src="assets/images/chakra3.jpg" alt="Throat Chakra" style="width:170px;height:190px">
+      </div>
+      <div class="col-xs-3">
+          <img id="chakraFour" src="assets/images/chakra4.jpg" alt="Third Eye Chakra" style="width:170px;height:190px">
+    </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  var targetNumber = Math.floor(Math.random() * (19 - 121) + 19);
+  </script>
+
+</body>
+
+</html>
